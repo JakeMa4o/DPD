@@ -1,0 +1,718 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.red {
+  color: rgba(220, 0, 50, 1);
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.logo {
+  display: flex;
+  gap: .6rem;
+  align-items: center;
+  font-weight: bold;
+}
+
+.box-icon {
+  width: 2rem;
+}
+
+.box-icon svg {
+  fill: #fff;
+}
+
+
+
+
+/* Hero */
+
+.hero {
+  height: 90vh;
+  height: 90dvh;
+  border: 1px solid #000;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.hero-info {
+  background-color: rgba(220, 0, 50, 1);
+  color: #fff;
+  display: grid;
+  place-items: center;
+  border-bottom-left-radius: 10%;
+  border-bottom-right-radius: 10%;
+  height: 40%;
+  position: relative;
+  z-index: 3;
+}
+
+.hero-info h1 {
+  font-weight: 700;
+  text-align: center;
+}
+
+.cta {
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 1.25rem 2rem;
+  font-size: 1rem;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* hero slider */
+
+.hero-slider {
+  position: relative;
+  height: 50%;
+  z-index: 1;
+}
+
+.hero-slider {
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+  bottom: 0;
+  height: 70%;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper-custom-navigation {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 3;
+}
+
+.btn {
+  border: none;
+  padding: 1rem;
+}
+
+.btn .arrow {
+  font-size: 1.5rem;
+  color: rgba(220, 0, 50, 1);
+}
+
+.prev {
+  transform: rotateY(180deg);
+}
+
+
+
+
+
+/* About */
+
+.about {
+  margin: 3rem 0;
+
+}
+
+.about-us {
+  padding: 1rem;
+}
+
+.about-us h2 {
+  padding-bottom: 1.5rem;
+}
+
+.about-description {
+  display: grid;
+  gap: 1rem;
+  font-size: .9rem;
+}
+
+.group3 {
+  display: none;
+}
+
+
+
+/* Company Values */
+
+.values {
+  margin: 3rem 0;
+}
+
+.values-text {
+  padding: 0 1rem;
+}
+
+.values-text h2 {
+  padding-bottom: 1rem;
+}
+
+.values-description {
+  display: grid;
+  gap: 1rem;
+}
+
+
+.points {
+  padding: 1rem;
+  display: grid;
+  gap: 2rem;
+}
+
+.point {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.point h3 {
+  color: rgba(220, 0, 50, 1);
+}
+
+.point-number {
+  background-color: rgba(220, 0, 50, 1);
+  border-radius: 50%;
+  min-width: 3rem;
+  min-height: 3rem;
+  display: grid;
+  place-items: center;
+  color: #fff;
+  font-size: 1.5rem;
+  position: relative;
+}
+
+.line {
+  position: absolute;
+}
+
+.point:not(:last-child) .point-number::after {
+  content: "";
+  width: .05rem;
+  height: 8.8rem;
+  position: absolute;
+  top: 3rem;
+  left: 1.5rem;
+  background-color: rgba(220, 0, 50, 1);
+  z-index: -1;
+}
+
+
+
+
+/* Mission */
+
+.mission-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.mission-img {
+  display: grid;
+  place-items: center;
+}
+
+.wrapper {
+  display: grid;
+  place-items: center;
+  background-color: rgba(220, 0, 50, 1);
+}
+
+.mission-text {
+  color: #fff;
+  position: relative;
+  padding: 1rem;
+}
+
+.mission-text h2 {
+  padding-bottom: 1rem;
+}
+
+.mission-bg {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: -10%;
+  width: 7rem;
+}
+
+.mission-slider {
+  margin: 2rem 0 1rem;
+  position: relative;
+  margin: 3rem 1rem;
+}
+
+.mission-slider-bg1,
+.mission-slider-bg2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(220, 0, 50, 1);
+}
+
+.mission-slider-bg1 {
+  transform: rotate(-3deg);
+}
+
+.mission-slider-bg2 {
+  transform: rotate(-7deg);
+  opacity: .5;
+}
+
+.play-btn {
+  position: absolute;
+  width: 3rem;
+  height: 3rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.mission-custom-navigation {
+  display: none;
+}
+
+.mission-prev,
+.mission-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  font-size: 3rem;
+  cursor: pointer;
+}
+
+.mission-prev:hover,
+.mission-next:hover {
+  color: rgba(220, 0, 50, 1);
+}
+
+.mission-prev {
+  left: -10%;
+  transform: rotate(180deg);
+}
+
+.mission-next {
+  right: -10%;
+}
+
+.mission-btn {
+  border: none;
+  background-color: transparent;
+  display: grid;
+  place-items: center;
+}
+
+
+
+
+
+/* Gallery */
+
+.gallery-slider {
+  padding: 1rem 0;
+}
+
+.gallery-slider .swiper-pagination-bullet {
+  background-color: #fff;
+  opacity: 1;
+  border: 1px solid rgba(220, 0, 50, 1);
+}
+
+.gallery-slider .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background-color: red;
+}
+
+.gallery-slider .swiper-wrapper {
+  padding-bottom: 3rem;
+}
+
+.gallery-slider .swiper-slide {
+  opacity: 0.5;
+}
+
+.gallery-slider .swiper-slide-active {
+  opacity: 1;
+}
+
+.gallery-slider .swiper-container-horizontal>.swiper-pagination-bullets,
+.gallery-slider .swiper-pagination-custom,
+.gallery-slider .swiper-pagination-fraction {
+  bottom: 0px !important;
+}
+
+
+
+
+/* Join Us */
+
+.join-us {
+  background-color: rgba(220, 0, 50, 1);
+  color: #fff;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  gap: 1rem;
+}
+
+
+@media screen and (min-width: 434px) {
+  .point:not(:last-child) .point-number::after {
+    height: 5rem;
+  }
+}
+
+
+@media screen and (min-width: 768px) {
+
+  .hero-info h1 {
+    font-size: 2rem;
+  }
+
+  .logo {
+    font-size: 2rem;
+  }
+
+  .box-icon {
+    width: 2.5rem;
+  }
+
+  .point:not(:last-child) .point-number::after {
+    height: 5rem;
+  }
+
+
+  .mission-card {
+    flex-direction: row;
+  }
+
+  .mission-wrapper {
+    padding: 4rem;
+  }
+
+  .mission-custom-navigation {
+    display: block;
+  }
+
+  .join-us {
+    display: flex;
+    justify-content: space-around;
+    padding: 2.5rem 0;
+  }
+
+  .join-us-text {
+    width: 50%;
+    text-align: left;
+  }
+}
+
+
+
+
+
+@media screen and (min-width: 1100px) {
+  .hero {
+    flex-direction: row;
+  }
+
+  .hero-info {
+    width: 50%;
+    height: 100%;
+    border-top-right-radius: 10%;
+    border-bottom-left-radius: 0;
+    place-items: start;
+    padding: 4rem;
+  }
+
+  .logo {
+    font-size: 2rem;
+  }
+
+  .box-icon {
+    width: 3rem;
+  }
+
+  .hero-info h1 {
+    font-size: 3.5rem;
+    text-align: left;
+    width: 50%;
+  }
+
+  .hero-slider {
+    position: absolute;
+    right: 0;
+    width: 60%;
+    height: 100%;
+  }
+
+  .hero-slider button:hover {
+    cursor: pointer;
+    background-color: rgba(220, 0, 50, 1);
+    color: #fff;
+  }
+
+  .arrow {
+    width: 2rem;
+  }
+
+  .hero-slider button:hover .arrow {
+    color: #fff;
+  }
+
+
+
+
+  .title {
+    font-size: 2.5rem;
+  }
+
+
+  /* About */
+
+  .about {
+    padding-right: 16rem;
+    margin: 4rem 0;
+    position: relative;
+    display: flex;
+  }
+
+  .about h2 {
+    padding-bottom: 2rem;
+  }
+
+  .about-img {
+    max-width: 62rem;
+    height: 50rem;
+  }
+
+  .about-us {
+    position: absolute;
+    right: 0;
+    top: 10rem;
+    width: 50rem;
+    background-color: #fff;
+    padding: 2rem 3rem 3rem;
+  }
+
+  .about-description {
+    font-size: 1rem;
+    gap: 2rem;
+    position: relative;
+  }
+
+  .group3 {
+    display: block;
+    width: 15rem;
+    height: 70rem;
+    position: absolute;
+    right: 0;
+    top: 20rem;
+  }
+
+
+
+
+  /* Company Values */
+
+  .values {
+    margin: 4rem 0;
+    padding: 0 3rem;
+  }
+
+  .values-text h2 {
+    padding-bottom: 2rem;
+  }
+
+  .values-description {
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    width: 80%;
+  }
+
+
+  .points {
+    padding: 0;
+    margin: 4rem 0;
+    gap: 4rem;
+  }
+
+  .point {
+    width: 70%;
+    gap: 2rem
+  }
+
+  .point-text h3 {
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
+  }
+
+  .point-number {
+    min-width: 4rem;
+    min-height: 4rem;
+  }
+
+  .point:not(:last-child) .point-number::after {
+    left: 2rem;
+    height: 8.8rem;
+  }
+
+
+  /* Mission */
+
+  .mission {
+    margin: 3rem 0;
+  }
+
+  .mission-text {
+    padding: 4.5rem;
+  }
+
+  .mission-bg {
+    right: 0;
+  }
+
+  .mission-wrapper {
+    padding: 10rem;
+  }
+
+  .play-btn {
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+
+
+  /* Gallery */
+
+  .gallery {
+    padding: 5rem 0;
+  }
+
+  .gallery h2 {
+    padding-bottom: 2rem;
+  }
+
+  .gallery-slider .swiper-pagination-bullet {
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .gallery-slider .swiper-wrapper {
+    padding-bottom: 5rem;
+  }
+
+
+
+  /* Join Us */
+
+  .join-us {
+    padding: 5rem 0;
+  }
+}
+
+
+@media screen and (min-width: 1920px) {
+  body {
+    padding: 0 10%;
+  }
+}
+
+
+@media screen and (min-width: 2560px) {
+  .logo {
+    font-size: 4rem;
+  }
+
+  .box-icon {
+    width: 4rem;
+  }
+
+  .hero-info h1 {
+    font-size: 6rem;
+  }
+
+  .cta {
+    font-size: 3rem;
+    border-width: 4px;
+  }
+
+  .btn {
+    padding: 1rem 2rem;
+  }
+
+  .btn .arrow {
+    font-size: 4rem;
+  }
+
+
+
+  .about-img {
+    max-width: 80rem;
+  }
+
+  .about-us {
+    width: 100rem;
+    font-size: 2rem;
+  }
+
+  .about-description {
+    font-size: 1.6rem;
+  }
+
+  .values {
+    font-size: 1.7rem;
+  }
+
+  .point-number {
+    font-size: 3rem;
+    min-width: 5rem;
+    min-height: 5rem;
+  }
+
+  .point:not(:last-child) .point-number::after {
+    left: 2.5rem;
+    height: 10rem;
+  }
+
+  .point-text h3 {
+    font-size: 2rem;
+  }
+
+  .mission {
+    font-size: 1.6rem;
+  }
+
+}
